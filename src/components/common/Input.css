@@ -1,0 +1,107 @@
+.input-wrapper {
+
+    position:relative;
+
+    width:100%;
+
+    margin-bottom:22px;
+
+}
+
+
+
+.input-wrapper input {
+
+
+    width:100%;
+
+    height:54px;
+
+
+    padding-left:50px;
+
+
+    background:
+
+    rgba(255,255,255,0.03);
+
+
+    border:1px solid var(--border-color);
+
+
+    border-radius:12px;
+
+
+    color:var(--text-main);
+
+
+    font-size:15px;
+
+
+    outline:none;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+.input-wrapper input::placeholder {
+
+    color:#64748B;
+
+}
+
+
+
+.input-wrapper input:hover {
+
+
+    border-color:
+
+    rgba(34,211,238,.4);
+
+
+}
+
+
+
+.input-wrapper input:focus {
+
+
+    border-color:
+
+    var(--primary-cyan);
+
+
+
+    box-shadow:
+
+    0 0 20px rgba(34,211,238,.15);
+
+
+}
+
+
+
+.input-icon {
+
+
+    position:absolute;
+
+
+    left:16px;
+
+
+    top:50%;
+
+
+    transform:translateY(-50%);
+
+
+    color:var(--primary-cyan);
+
+
+}

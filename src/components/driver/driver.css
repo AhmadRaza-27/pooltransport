@@ -1,0 +1,591 @@
+/* =========================
+ DRIVER DASHBOARD
+========================= */
+
+
+.driver-header{
+
+    margin-bottom:35px;
+
+}
+
+
+
+.driver-header h1{
+
+    color:var(--text-main);
+
+    font-size:38px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.driver-header p{
+
+    color:var(--text-muted);
+
+}
+
+
+
+
+/* STATS */
+
+
+.driver-stats{
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(4,1fr);
+
+
+    gap:22px;
+
+
+}
+
+
+
+
+
+.driver-stat-card{
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+
+    rgba(255,255,255,.05);
+
+
+
+    border:
+
+
+    1px solid rgba(255,255,255,.08);
+
+
+
+    color:#22D3EE;
+
+
+
+    transition:.3s ease;
+
+
+}
+
+
+
+
+.driver-stat-card:hover{
+
+
+    transform:translateY(-5px);
+
+
+    border-color:#22D3EE;
+
+
+    box-shadow:
+
+    0 15px 35px rgba(34,211,238,.15);
+
+
+}
+
+
+
+
+
+.driver-stat-card h2{
+
+
+    margin-top:18px;
+
+
+    color:white;
+
+
+    font-size:28px;
+
+
+}
+
+
+
+.driver-stat-card p{
+
+
+    color:#94A3B8;
+
+
+}
+
+
+
+
+
+
+/* UPCOMING RIDE */
+
+
+.upcoming-ride-card{
+
+
+    margin-top:35px;
+
+
+    padding:30px;
+
+
+    border-radius:22px;
+
+
+
+    background:
+
+
+    linear-gradient(
+
+        135deg,
+
+        rgba(34,211,238,.12),
+
+        rgba(139,92,246,.12)
+
+    );
+
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+}
+
+
+
+
+.upcoming-ride-card h2{
+
+
+    color:white;
+
+    margin-bottom:25px;
+
+}
+
+
+
+
+.ride-info{
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:20px;
+
+
+    color:#22D3EE;
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+
+.ride-time{
+
+
+    margin-top:20px;
+
+
+    color:#CBD5E1;
+
+
+}
+
+
+
+
+
+
+@media(max-width:1000px){
+
+
+.driver-stats{
+
+
+grid-template-columns:repeat(2,1fr);
+
+
+}
+
+
+}
+
+
+
+
+@media(max-width:600px){
+
+
+.driver-stats{
+
+
+grid-template-columns:1fr;
+
+
+}
+
+
+}
+/* =========================
+ DRIVER REQUESTS
+========================= */
+
+
+.driver-request-grid {
+
+
+    display:grid;
+
+
+    grid-template-columns:repeat(2,1fr);
+
+
+    gap:25px;
+
+
+}
+
+
+
+
+
+.empty-state {
+
+
+    padding:40px;
+
+
+    border-radius:20px;
+
+
+    background:rgba(255,255,255,.05);
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+    color:white;
+
+
+}
+
+
+
+.empty-state p {
+
+
+    color:#94A3B8;
+
+
+}
+
+
+
+
+@media(max-width:900px){
+
+
+    .driver-request-grid{
+
+
+        grid-template-columns:1fr;
+
+
+    }
+
+
+}
+/* =========================
+ DRIVER REQUEST CARD
+========================= */
+
+
+.driver-request-card {
+
+
+    padding:25px;
+
+
+    border-radius:20px;
+
+
+    background:
+
+    rgba(255,255,255,.05);
+
+
+    border:
+
+    1px solid rgba(255,255,255,.1);
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.request-top {
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.request-top h3 {
+
+
+    margin:0;
+
+
+    font-size:20px;
+
+
+}
+
+
+
+
+
+.request-status {
+
+
+    padding:6px 14px;
+
+
+    border-radius:20px;
+
+
+    font-size:12px;
+
+
+}
+
+
+
+
+
+.request-status.pending {
+
+
+    background:
+
+    rgba(234,179,8,.15);
+
+
+    color:#FACC15;
+
+
+}
+
+
+
+
+
+.request-status.approved {
+
+
+    background:
+
+    rgba(34,197,94,.15);
+
+
+    color:#4ADE80;
+
+
+}
+
+
+
+
+
+.request-status.rejected {
+
+
+    background:
+
+    rgba(239,68,68,.15);
+
+
+    color:#F87171;
+
+
+}
+
+
+
+
+
+.request-info {
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    gap:12px;
+
+
+    color:#CBD5E1;
+
+
+}
+
+
+
+
+.request-info p {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+}
+
+
+
+
+
+
+.request-actions {
+
+
+    display:flex;
+
+
+    gap:15px;
+
+
+    margin-top:25px;
+
+
+}
+
+
+
+
+
+.approve-btn,
+
+
+.reject-btn {
+
+
+    flex:1;
+
+
+    height:42px;
+
+
+    border:none;
+
+
+    border-radius:12px;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+    cursor:pointer;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+
+
+.approve-btn {
+
+
+    background:#22C55E;
+
+
+    color:white;
+
+
+}
+
+
+
+
+
+.reject-btn {
+
+
+    background:#EF4444;
+
+
+    color:white;
+
+
+}

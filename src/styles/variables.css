@@ -1,0 +1,53 @@
+:root {
+
+
+    /* MAIN BACKGROUND */
+
+    --bg-primary:#050816;
+
+    --bg-secondary:#0B1220;
+
+
+
+    /* BRAND COLORS */
+
+    --primary-purple:#8B5CF6;
+
+    --primary-cyan:#22D3EE;
+
+    --glow-indigo:#6366F1;
+
+
+
+    /* TEXT COLORS */
+
+    --text-main:#E2E8F0;
+
+    --text-muted:#94A3B8;
+
+
+
+    /* UI */
+
+    --border-color:rgba(255,255,255,0.08);
+
+    --card-bg:rgba(11,18,32,0.75);
+
+
+
+    /* BUTTON */
+
+    --button-start:#8B5CF6;
+
+    --button-end:#22D3EE;
+
+
+
+    /* STATUS */
+
+    --success:#22C55E;
+
+    --warning:#F59E0B;
+
+
+}

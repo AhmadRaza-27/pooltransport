@@ -1,0 +1,50 @@
+import React from "react";
+
+import ReactDOM from "react-dom/client";
+
+
+import {
+    BrowserRouter
+} from "react-router-dom";
+
+
+import App from "./App";
+
+
+import RideProvider from "./context/RideContext";
+
+
+import "./index.css";
+
+
+
+
+ReactDOM.createRoot(
+    document.getElementById("root")
+)
+
+.render(
+
+
+<React.StrictMode>
+
+
+    <RideProvider>
+
+
+        <BrowserRouter>
+
+
+            <App />
+
+
+        </BrowserRouter>
+
+
+    </RideProvider>
+
+
+</React.StrictMode>
+
+
+);
